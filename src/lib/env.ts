@@ -1,4 +1,4 @@
-const DEFAULT_API_ORIGIN = 'http://127.0.0.1:3000';
+const DEFAULT_API_ORIGIN = 'https://onmangeou-backend-api-production.up.railway.app';
 const API_PREFIX = '/api/v1';
 
 /**
