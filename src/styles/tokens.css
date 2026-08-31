@@ -1,0 +1,82 @@
+/*
+ * Tokens synchronisés depuis docs/reference/onmangeou-tokens.json.
+ * Ne pas inventer de couleur. Toute modification de marque exige une décision écrite.
+ */
+
+:root {
+  --color-brand-deep: #173b36;
+  --color-brand-primary: #1f6f5f;
+  --color-brand-accent: #e8783e;
+  --color-brand-cream: #f7f2e8;
+  --color-text-primary: #21302d;
+  --color-text-on-brand: #ffffff;
+  --color-text-muted: #5b6b67;
+  --color-border-default: #d9e1de;
+  --color-surface-mint: #eef5f2;
+  --color-surface-white: #ffffff;
+  --color-feedback-error: #c63d3d;
+  --color-feedback-warning: #b96912;
+  --color-feedback-success: #1f6f5f;
+  --color-feedback-info: #173b36;
+
+  --font-family-base: var(--font-inter), Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 22px;
+  --font-size-xxl: 28px;
+  --font-size-xxxl: 34px;
+
+  --line-height-tight: 1.35;
+  --line-height-normal: 1.45;
+  --line-height-relaxed: 1.55;
+
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-xxl: 48px;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-card: 16px;
+  --radius-pill: 999px;
+
+  --layout-screen-padding: 16px;
+  --layout-min-touch: 44px;
+  --layout-max-content: 1200px;
+
+  --elevation-subtle: 0 1px 2px rgba(23, 59, 54, 0.06);
+  --elevation-raised: 0 4px 12px rgba(23, 59, 54, 0.1);
+
+  --motion-fast: 120ms;
+  --motion-base: 200ms;
+  --motion-slow: 320ms;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --layout-screen-padding: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --layout-screen-padding: 32px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-fast: 0ms;
+    --motion-base: 0ms;
+    --motion-slow: 0ms;
+  }
+}

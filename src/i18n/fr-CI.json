@@ -1,0 +1,209 @@
+{
+  "brand": {
+    "name": "OnMangeOu",
+    "tagline": "Trouvez où manger à Abidjan."
+  },
+  "meta": {
+    "defaultTitle": "OnMangeOu — où manger à Abidjan",
+    "defaultDescription": "Découvrez les restaurants, menus et horaires à Abidjan. Consultez les plats et ouvrez la fiche dans l’application.",
+    "titleTemplate": "{title} · OnMangeOu",
+    "restaurantDescription": "Menu, horaires et informations de {name} à {city}.",
+    "restaurantDescriptionFallback": "Menu et informations de {name} sur OnMangeOu.",
+    "searchTitle": "Recherche",
+    "searchDescription": "Recherchez un restaurant, un plat ou un quartier à Abidjan."
+  },
+  "nav": {
+    "home": "Accueil",
+    "search": "Recherche",
+    "help": "Aide",
+    "contact": "Contact",
+    "skipToContent": "Aller au contenu",
+    "find": "Trouver un restaurant"
+  },
+  "header": {
+    "logoAlt": "OnMangeOu"
+  },
+  "footer": {
+    "tagline": "Le point de rencontre entre ceux qui cherchent où manger et les restaurants d’Abidjan.",
+    "discover": "Découvrir",
+    "support": "Aide",
+    "legalGroup": "Légal",
+    "legal": "Mentions légales",
+    "privacy": "Confidentialité",
+    "help": "Aide",
+    "contact": "Contact",
+    "copyright": "© {year} OnMangeOu. Tous droits réservés."
+  },
+  "home": {
+    "title": "Où manger à Abidjan ?",
+    "subtitle": "Menus, horaires et quartiers, sans créer de compte. La commande se poursuit dans l’application.",
+    "eyebrow": "Abidjan · Côte d’Ivoire",
+    "listTitle": "Tous les restaurants",
+    "openNowTitle": "Ouverts maintenant",
+    "openNowEmpty": "Aucun restaurant ouvert pour ce créneau. Parcourez la liste complète ci-dessous.",
+    "spotlightKicker": "À la une",
+    "neighborhoodsTitle": "Par quartier",
+    "howTitle": "Comment ça marche",
+    "how1Title": "Cherchez",
+    "how1Body": "Un plat, un maquis ou un quartier. Les résultats restent lisibles, même sans compte.",
+    "how2Title": "Consultez",
+    "how2Body": "Menu, horaires et services. Les prix sont toujours en FCFA, sans décimales.",
+    "how3Title": "Passez à l’application",
+    "how3Body": "Pour commander ou enregistrer un favori, ouvrez la fiche sur téléphone.",
+    "statRestaurants": "{count} restaurants",
+    "statOpen": "{count} ouverts maintenant",
+    "statMenus": "Menus et horaires à jour",
+    "ctaTitle": "Gardez OnMangeOu dans votre poche",
+    "ctaBody": "L’application client retrouve les mêmes restaurants, avec vos favoris et, bientôt, vos commandes.",
+    "areaCocody": "Cocody",
+    "areaPlateau": "Plateau",
+    "areaYopougon": "Yopougon",
+    "areaMarcory": "Marcory",
+    "areaAngre": "Angré",
+    "emptyTitle": "Aucun restaurant pour le moment",
+    "emptyDetail": "Nous n’avons pas encore de restaurant publié à Abidjan. Revenez un peu plus tard."
+  },
+  "search": {
+    "label": "Rechercher un restaurant, un plat ou un quartier",
+    "placeholder": "Maquis, attiéké, Cocody…",
+    "submit": "Rechercher",
+    "title": "Résultats de recherche",
+    "queryLabel": "Recherche : {query}",
+    "emptyQueryTitle": "Que cherchez-vous ?",
+    "emptyQueryDetail": "Saisissez un restaurant, un plat, un type de cuisine ou un quartier.",
+    "emptyTitle": "Aucun résultat",
+    "emptyDetail": "Aucun restaurant ne correspond à « {query} ». Essayez un autre mot ou un quartier."
+  },
+  "restaurant": {
+    "openInApp": "Ouvrir dans l’application",
+    "menuTitle": "Menu",
+    "hoursTitle": "Horaires",
+    "locationTitle": "Adresse",
+    "servicesTitle": "Services",
+    "verified": "Restaurant vérifié",
+    "prepTime": "Préparation environ {minutes} min",
+    "priceFrom": "À partir de",
+    "closedToday": "Fermé",
+    "landmark": "Repère : {landmark}",
+    "seeMenu": "Voir le menu",
+    "backHome": "Tous les restaurants",
+    "phone": "Téléphone",
+    "emptyMenuTitle": "Menu à venir",
+    "emptyMenuDetail": "Le restaurant n’a pas encore publié de plat. Ouvrez l’application pour être prévenu.",
+    "notFoundTitle": "Restaurant introuvable",
+    "notFoundDetail": "Cette fiche n’existe plus ou n’est pas encore publique."
+  },
+  "status": {
+    "open": "Ouvert",
+    "closed": "Fermé",
+    "closesIn": "Ferme dans {minutes} min",
+    "opensIn": "Ouvre dans {minutes} min"
+  },
+  "service": {
+    "DINE_IN": "Sur place",
+    "TAKEAWAY": "À emporter",
+    "DELIVERY": "Livraison",
+    "RESERVATION": "Réservation"
+  },
+  "weekday": {
+    "MONDAY": "Lundi",
+    "TUESDAY": "Mardi",
+    "WEDNESDAY": "Mercredi",
+    "THURSDAY": "Jeudi",
+    "FRIDAY": "Vendredi",
+    "SATURDAY": "Samedi",
+    "SUNDAY": "Dimanche"
+  },
+  "dish": {
+    "unavailable": "Ce plat n’est plus disponible pour ce créneau.",
+    "vegetarian": "Végétarien",
+    "halal": "Halal",
+    "spicy": "Pimenté",
+    "allergens": "Allergènes : {list}",
+    "prepTime": "{minutes} min"
+  },
+  "price": {
+    "currency": "FCFA",
+    "unavailable": "Prix indisponible"
+  },
+  "errors": {
+    "title": "Impossible d’afficher cette page",
+    "detail": "Le service est momentanément indisponible. Réessayez dans un instant.",
+    "network": "Connexion difficile. Vérifiez votre réseau puis réessayez.",
+    "unavailableTitle": "Service indisponible",
+    "unavailableDetail": "Nous n’avons pas pu charger les informations. Réessayez.",
+    "retry": "Réessayer",
+    "invalidResponse": "La réponse du service est inattendue. Réessayez."
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "detail": "Ce lien n’existe pas ou n’est plus disponible.",
+    "backHome": "Retour à l’accueil"
+  },
+  "loading": {
+    "label": "Chargement"
+  },
+  "help": {
+    "title": "Aide",
+    "intro": "OnMangeOu vous aide à trouver un restaurant et à consulter son menu. La commande et le paiement se font dans l’application.",
+    "sections": [
+      {
+        "title": "Dois-je créer un compte ?",
+        "body": "Non pour consulter les restaurants et les menus. Un compte est demandé seulement pour une action qui doit être mémorisée, comme une commande."
+      },
+      {
+        "title": "Comment commander ?",
+        "body": "Ouvrez la fiche du restaurant, puis le bouton « Ouvrir dans l’application ». Vous poursuivez la commande sur téléphone."
+      },
+      {
+        "title": "Les prix sont-ils en FCFA ?",
+        "body": "Oui. Tous les montants sont en francs CFA, sans décimales, par exemple 12 500 FCFA."
+      },
+      {
+        "title": "Un plat n’est plus disponible",
+        "body": "Le restaurant met à jour ses disponibilités. Si un plat est en rupture, il reste visible avec une mention claire."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Une question, un restaurant à signaler ou besoin d’aide ? Écrivez-nous.",
+    "nameLabel": "Nom",
+    "namePlaceholder": "Votre nom",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "vous@exemple.ci",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Expliquez-nous votre besoin",
+    "submit": "Préparer le message",
+    "successTitle": "Votre message est prêt",
+    "successDetail": "Votre logiciel de messagerie va s’ouvrir. Si ce n’est pas le cas, écrivez-nous à {email}.",
+    "errors": {
+      "name": "Indiquez votre nom (au moins 2 caractères).",
+      "email": "Indiquez une adresse e-mail valide.",
+      "message": "Écrivez un message d’au moins 10 caractères."
+    },
+    "emailAddress": "contact@onmangeou.ci",
+    "subject": "Contact OnMangeOu"
+  },
+  "legal": {
+    "mentions": {
+      "title": "Mentions légales",
+      "paragraphs": [
+        "OnMangeOu est une plateforme de mise en relation entre le public et les restaurants, destinée en premier lieu à la Côte d’Ivoire.",
+        "L’éditeur du site est Emmanuel Kouame. Le site public permet de consulter des fiches restaurants et des menus. Il ne traite pas de paiement.",
+        "Les informations publiées (horaires, prix, disponibilités) sont fournies par les établissements. Elles peuvent changer sans préavis. En cas d’écart, la fiche dans l’application et la confirmation du restaurant font foi.",
+        "Pour toute question : contact@onmangeou.ci."
+      ]
+    },
+    "privacy": {
+      "title": "Politique de confidentialité",
+      "paragraphs": [
+        "La consultation des restaurants et des menus sur ce site ne nécessite pas de compte.",
+        "Lorsque vous utilisez le formulaire de contact, votre nom, votre e-mail et votre message sont transmis via votre logiciel de messagerie. Nous les utilisons uniquement pour vous répondre.",
+        "Les pages consultées peuvent générer des journaux techniques (adresse IP, date, page) pour assurer la sécurité et le bon fonctionnement du service.",
+        "Nous ne vendons pas vos données. Pour une demande d’accès, de correction ou de suppression, écrivez à contact@onmangeou.ci.",
+        "Les horaires affichés le sont pour le fuseau Africa/Abidjan."
+      ]
+    }
+  }
+}
