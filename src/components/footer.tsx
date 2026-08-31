@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="site-footer">
       <div className="site-footer__inner">
         <div className="site-footer__brand">
-          <img src="/brand/onmangeou-logo-full-dark.svg" alt="" width={120} height={78} />
+          <img src="/brand/onmangeou-logo-full-dark.svg" alt="" width={120} height={35} />
           <p>{t('footer.tagline')}</p>
         </div>
         <nav className="site-footer__col" aria-label={t('footer.discover')}>
