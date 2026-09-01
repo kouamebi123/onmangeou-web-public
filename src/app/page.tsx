@@ -1,5 +1,4 @@
 import { ErrorState } from '@/components/error-state';
-import { NeighborhoodChips } from '@/components/neighborhood-chips';
 import { OpenInAppButton } from '@/components/open-in-app-button';
 import { RestaurantCard } from '@/components/restaurant-card';
 import { SearchBar } from '@/components/search-bar';
@@ -50,13 +49,6 @@ export default async function HomePage() {
             <li>{t('home.statMenus')}</li>
           </ul>
         ) : null}
-      </section>
-
-      <section className="section">
-        <header className="section-head">
-          <h2>{t('home.neighborhoodsTitle')}</h2>
-        </header>
-        <NeighborhoodChips />
       </section>
 
       {result.ok ? (
