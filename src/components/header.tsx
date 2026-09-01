@@ -6,7 +6,7 @@ export function Header() {
     <header className="site-header">
       <div className="site-header__inner">
         <Link className="site-logo" href="/">
-          <img src="/brand/onmangeou-logo-full-dark.svg" alt={t('header.logoAlt')} width={132} height={38} />
+          <img src="/brand/onmangeou-logo-full-dark.svg" alt={t('header.logoAlt')} width={60} height={84} />
         </Link>
         <nav className="site-nav" aria-label={t('brand.name')}>
           <Link href="/">{t('nav.home')}</Link>

@@ -120,8 +120,9 @@ h3 {
 }
 
 .site-logo img {
-  width: 132px;
-  height: auto;
+  width: 60px;
+  height: 84px;
+  object-fit: contain;
 }
 
 .site-nav {
@@ -192,8 +193,9 @@ h3 {
 }
 
 .site-footer__brand img {
-  width: 120px;
-  height: auto;
+  width: 70px;
+  height: 98px;
+  object-fit: contain;
 }
 
 .site-footer__col h2 {
