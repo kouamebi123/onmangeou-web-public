@@ -10,12 +10,12 @@ interface DishCardProps {
 export function DishCard({ dish }: DishCardProps) {
   return (
     <article className={dish.available ? 'dish-card' : 'dish-card dish-card--unavailable'}>
-      {dish.imageUrl !== null ? <img className="card-cover" src={dish.imageUrl} alt="" /> : null}
-      <div className="card-meta">
+      {dish.imageUrl !== null ? <img className="dish-card__photo" src={dish.imageUrl} alt="" loading="lazy" /> : null}
+      <div className="dish-card__head">
+        <h3>{dish.name}</h3>
         <Price value={dish.price} />
-        {dish.available ? null : <Badge variant="warning">{t('dish.unavailable')}</Badge>}
       </div>
-      <h3>{dish.name}</h3>
+      {dish.available ? null : <Badge variant="warning">{t('dish.unavailable')}</Badge>}
       {dish.description !== null ? <p className="muted">{dish.description}</p> : null}
       <div className="card-meta">
         {dish.vegetarian ? <Badge>{t('dish.vegetarian')}</Badge> : null}

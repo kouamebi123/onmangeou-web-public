@@ -63,6 +63,7 @@ export interface RestaurantDetail extends RestaurantSummary {
   phoneE164: string | null;
   addressLine: string | null;
   verified: boolean;
+  timezone?: string;
   hours: RestaurantHours[];
   menus: RestaurantMenu[];
 }

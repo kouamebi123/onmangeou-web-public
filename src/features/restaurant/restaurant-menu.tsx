@@ -18,10 +18,10 @@ export function RestaurantMenu({ menus }: RestaurantMenuProps) {
     <div className="stack">
       {menus.map((menu) => (
         <section className="menu-block" key={menu.id}>
-          <h2>{menu.name}</h2>
+          {menus.length > 1 ? <h3 className="menu-block__title">{menu.name}</h3> : null}
           {menu.categories.map((category) => (
             <div className="menu-block" key={category.id}>
-              <h3>{category.name}</h3>
+              <h3 className="menu-block__category">{category.name}</h3>
               {category.description !== null ? <p className="muted">{category.description}</p> : null}
               <div className="dish-grid">
                 {category.products.map((product) => (
