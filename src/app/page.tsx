@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { SponsoredCard } from "@/components/sponsored-card";
 import { getApiBaseUrl } from "@/lib/env";
 import { ErrorState } from "@/components/error-state";
@@ -11,6 +12,8 @@ import { t } from "@/lib/i18n";
 import type { RestaurantSummary } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = { alternates: { canonical: "/" } };
 
 async function loadHomeRestaurants(): Promise<
   { ok: true; restaurants: RestaurantSummary[] } | { ok: false; error: unknown }
@@ -95,7 +98,7 @@ export default async function HomePage() {
               </div>
             </section>
           ) : restaurants.length > 0 && openNow.length === 0 ? (
-            <p className="muted">{t("home.openNowEmpty")}</p>
+            <p className="inline-note">{t("home.openNowEmpty")}</p>
           ) : null}
 
           <section className="section">

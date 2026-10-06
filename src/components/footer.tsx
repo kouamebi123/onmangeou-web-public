@@ -24,7 +24,15 @@ export function Footer() {
           <Link href="/legal/mentions">{t('footer.legal')}</Link>
           <Link href="/legal/confidentialite">{t('footer.privacy')}</Link>
         </nav>
-        <p className="site-footer__copy">{t('footer.copyright', { year: String(new Date().getFullYear()) })}</p>
+        <div className="site-footer__bottom">
+          <p className="site-footer__copy">{t('footer.copyright', { year: String(new Date().getFullYear()) })}</p>
+          <p className="site-footer__signature">
+            {t('footer.signedBy')}{' '}
+            <a href="https://binuxlabs.com" target="_blank" rel="noopener">
+              BinuxLabs
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );

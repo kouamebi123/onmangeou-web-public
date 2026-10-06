@@ -32,7 +32,8 @@
     "privacy": "Confidentialité",
     "help": "Aide",
     "contact": "Contact",
-    "copyright": "© {year} OnMangeOu. Tous droits réservés."
+    "copyright": "© {year} OnMangeOu. Tous droits réservés.",
+    "signedBy": "Signé"
   },
   "home": {
     "title": "Où manger à Abidjan ?",

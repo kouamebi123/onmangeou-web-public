@@ -4,6 +4,7 @@ import { ErrorState } from '@/components/error-state';
 import { RestaurantDetail } from '@/features/restaurant/restaurant-detail';
 import { errorMessage, getRestaurantBySlug, getRestaurantEvents, getRestaurantReviews, isNotFound } from '@/lib/api';
 import { t } from '@/lib/i18n';
+import { absoluteUrl, restaurantJsonLd, serializeJsonLd } from '@/lib/seo';
 import type { RestaurantDetail as RestaurantDetailType } from '@/lib/types';
 
 export const dynamic = 'force-dynamic';
@@ -41,9 +42,28 @@ export async function generateMetadata({ params }: RestaurantPageProps): Promise
       ? result.restaurant.description
       : t('meta.restaurantDescription', { name: result.restaurant.name, city: result.restaurant.city });
 
+  const path = `/restaurants/${encodeURIComponent(result.restaurant.slug)}`;
+  const images = result.restaurant.coverImageUrl !== null ? [{ url: result.restaurant.coverImageUrl }] : undefined;
+
   return {
     title: result.restaurant.name,
     description,
+    alternates: { canonical: path },
+    openGraph: {
+      type: 'website',
+      siteName: 'OnMangeOu',
+      locale: 'fr_CI',
+      url: path,
+      title: result.restaurant.name,
+      description,
+      ...(images ? { images } : {}),
+    },
+    twitter: {
+      card: images ? 'summary_large_image' : 'summary',
+      title: result.restaurant.name,
+      description,
+      ...(images ? { images: images.map((image) => image.url) } : {}),
+    },
   };
 }
 
@@ -74,6 +94,17 @@ export default async function RestaurantPage({ params }: RestaurantPageProps) {
 
   return (
     <div className="page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: serializeJsonLd(
+            restaurantJsonLd(
+              result.restaurant,
+              absoluteUrl(`/restaurants/${encodeURIComponent(result.restaurant.slug)}`),
+            ),
+          ),
+        }}
+      />
       <RestaurantDetail restaurant={result.restaurant} reviews={reviews} events={events} />
     </div>
   );
