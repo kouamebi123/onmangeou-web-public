@@ -1076,3 +1076,118 @@ h3 {
     transform: none;
   }
 }
+
+/* ============================================================
+   Finitions UI/UX — fluidité et micro-interactions
+   (tokens existants uniquement, repli sûr, reduced-motion géré)
+   ============================================================ */
+
+/* En-tête collant : reste accessible au défilement, ombre discrète. */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06), var(--elevation-subtle);
+}
+
+@supports (backdrop-filter: blur(8px)) {
+  .site-header {
+    background: color-mix(in srgb, var(--color-brand-deep) 86%, transparent);
+    backdrop-filter: saturate(140%) blur(10px);
+  }
+}
+
+/* Boutons et puces : transitions douces + léger relief au survol. */
+.button,
+.site-nav__cta,
+.choice-chip {
+  transition:
+    background var(--motion-base),
+    border-color var(--motion-base),
+    color var(--motion-base),
+    transform var(--motion-fast),
+    box-shadow var(--motion-base);
+}
+
+.button:hover,
+.site-nav__cta:hover,
+.choice-chip:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--elevation-raised);
+}
+
+.button:active,
+.site-nav__cta:active,
+.choice-chip:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Hero : halo chaud qui dérive lentement (contenu inchangé si reduced-motion). */
+.hero-panel {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.hero-panel > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-panel::after {
+  content: "";
+  position: absolute;
+  inset: -40% -20% auto auto;
+  z-index: 0;
+  width: 60%;
+  aspect-ratio: 1;
+  background: radial-gradient(circle, rgba(232, 120, 62, 0.22), transparent 62%);
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-panel::after {
+    animation: hero-drift 16s ease-in-out infinite;
+  }
+}
+
+@keyframes hero-drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translate3d(-6%, 8%, 0) scale(1.15);
+    opacity: 1;
+  }
+}
+
+/* Révélation au défilement, native (scroll-driven), uniquement si prise en
+   charge ET mouvement autorisé. Sans support, le contenu s'affiche normalement. */
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .restaurant-card,
+    .step-card,
+    .info-card,
+    .menu-block,
+    .cta-band,
+    .state-card {
+      animation: reveal-up linear both;
+      animation-timeline: view();
+      animation-range: entry 2% cover 20%;
+    }
+  }
+}
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
