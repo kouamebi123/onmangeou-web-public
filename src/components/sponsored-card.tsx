@@ -60,7 +60,7 @@ export function SponsoredCard({ apiBaseUrl }: { apiBaseUrl: string }) {
   }, [ad, apiBaseUrl]);
   if (!ad) return null;
   return (
-    <section className="section" ref={element}>
+    <section className="section appear" ref={element}>
       <p className="eyebrow">{t("ads.sponsored")}</p>
       <h2>{ad.title}</h2>
       <Link

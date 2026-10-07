@@ -1191,3 +1191,21 @@ h3 {
     transform: translateY(0);
   }
 }
+
+/* Rien n'apparaît d'un coup : la page, les messages et les blocs arrivés après
+   coup se posent en fondu avec une légère montée. Le mouvement part de l'état
+   masqué vers l'état normal, sans rien laisser derrière lui. */
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .site-main > *,
+  .appear,
+  .field-error {
+    animation: appear var(--motion-slow) cubic-bezier(0.22, 1, 0.36, 1) backwards;
+  }
+}
